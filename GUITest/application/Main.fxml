@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Button layoutX="284.0" layoutY="14.0" mnemonicParsing="false" onAction="#up" text="Up" />
+      <Button layoutX="541.0" layoutY="188.0" mnemonicParsing="false" onAction="#right" text="Right" />
+      <Button layoutX="277.0" layoutY="361.0" mnemonicParsing="false" onAction="#down" text="Down" />
+      <Button layoutX="14.0" layoutY="188.0" mnemonicParsing="false" onAction="#left" text="Left" />
+      <Circle fx:id="myCircle" layoutX="301.0" layoutY="200.0" radius="100.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.003599999938160181" green="0.087692491710186" blue="0.18000000715255737" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Circle>
+   </children>
+</AnchorPane>
